@@ -149,7 +149,30 @@
             color: #ffffff;
             text-align: center;
             padding: 2rem 0;
-            margin-top: 4rem;
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
         }
 
         footer p {
@@ -184,7 +207,7 @@
     </header>
 
     <main class="container">
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <div class="about-grid">
                 <div class="about-item">
@@ -223,7 +246,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-item">Excel</div>
@@ -243,7 +266,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
             <div class="contact-grid">
                 <div class="contact-item">
@@ -258,7 +281,7 @@
                         <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"/>
                     </svg>
                     <a href="https://t.me/hamedsafaie" target="_blank">@hamedsafaie</a>
-                
+                    <a href="https://t.me/hamedsafaie" target="_blank">@hamedsafaei</a>
                 </div>
             </div>
         </section>
@@ -266,7 +289,14 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Hamed Sadri Safaei. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#about">About Me</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p>&copy; 2024 Hamed Sadri Safaei. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
