@@ -190,6 +190,7 @@
         .card-item .company { font-weight: 600; color: var(--text-light); margin-bottom: 1rem; font-size: 1rem; }
         .card-item ul { margin-left: 1.2rem; margin-bottom: 1rem; list-style: disc; font-size: 0.95rem; }
         .card-item .skills { font-size: 0.9rem; color: var(--text-light); }
+        /* بهبود بخش Skills – مکعب‌های یک اندازه و متن همیشه وسط */
         .skills-grid {
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
@@ -302,7 +303,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="New.jpg" alt="Hamed Sadri Safaei Profile">
+                <img src="https://github.com/hamedsadrisafaei/hamedsadrisafaei.github.io/blob/main/New.jpg" alt="Hamed Sadri Safaei Profile">
             </div>
         </div>
     </section>
@@ -448,14 +449,12 @@ Microsoft Office
     </footer>
 
     <script>
-        // اسکرول navbar
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) navbar.classList.add('scrolled');
             else navbar.classList.remove('scrolled');
         });
 
-        // منوی موبایل
         const mobileMenu = document.getElementById('mobile-menu');
         const navLinks = document.getElementById('nav-links');
         mobileMenu.addEventListener('click', () => {
@@ -464,6 +463,7 @@ Microsoft Office
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
         });
+
         const sections = document.querySelectorAll('section[id]');
         const navItems = document.querySelectorAll('.nav-links a');
 
@@ -492,7 +492,7 @@ Microsoft Office
         }
 
         window.addEventListener('scroll', setActiveLink);
-        setActiveLink(); // اجرای اولیه
+        setActiveLink(); 
     </script>
 </body>
 </html>
